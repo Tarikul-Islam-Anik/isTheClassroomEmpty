@@ -4,32 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Find Empty Classroom In BRAC University">
-    <meta name="keywords" content="BRACU, BRAC, BRAC University, isTheClassroomEmpty, nur-zaman">
+    <meta name="description" content="Find Empty Classroom In BRAC University" />
+    <meta name="keywords" content="BRACU, BRAC, BRAC University, isTheClassroomEmpty, nur-zaman" />
     <!-- favico -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="favicon/browserconfig.xml" />
@@ -38,18 +20,15 @@
     <script src="https://githubraw.com/nur-zaman/forCDN/main/ITCE/itceExtra.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TM2958SL6N"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM2958SL6N"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag("js", new Date());
+      gtag('js', new Date())
 
-      gtag("config", "G-TM2958SL6N");
+      gtag('config', 'G-TM2958SL6N')
     </script>
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -67,46 +46,47 @@
 
     <title>Is The Classroom Empty</title>
   </head>
-  <body class="bg-neutral-900 text-slate-200 font-mono">
+  <body class="bg-neutral-900 font-mono text-slate-200">
     <div
-      class="container mx-auto mt-5 p-5 border-b-2 text-5xl text-center align-middle shadow-lg shadow-slate-900"
+      class="container mx-auto mt-5 border-b-2 p-5 text-center align-middle text-5xl shadow-lg shadow-slate-900"
     >
       Is The Classroom Empty?
     </div>
     <div class="flex flex-wrap">
-      <div
-        class="max-w-sm rounded overflow-hidden shadow-lg shadow-slate-900 mx-auto my-8 h-fit"
-      >
+      <div class="mx-auto my-8 h-fit max-w-sm overflow-hidden rounded shadow-lg shadow-slate-900">
         <div class="mb-2 flex justify-center">
           <a href="index.html"
             ><span
-              class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2"
+              class="mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-600"
               ><i class="fa fa-home"></i></span
           ></a>
         </div>
 
-        <div class="px-6 py-4 bg-neutral-800">
-          <table
-            class="border-collapse border border-slate-500 w-full text-center"
-          >
-            <div class="mb-2 flex justify-center flex-col">
+        <div class="bg-neutral-800 px-6 py-4">
+          <table class="w-full border-collapse border border-slate-500 text-center">
+            <div class="mb-2 flex flex-col justify-center">
               Full List of Empty Classrooms.
 
-              <div
-              class="flex items-center px-6 pb-4 h-auto bg-neutral-800 flex-col" >
-        
-            <button onclick="tog()" class="  bg-white hover:bg-gray-100 text-gray-800 font-semibold  px-4 border border-gray-400 rounded shadow " >Enter Custom Time</button>
-            </div>
+              <div class="flex h-auto flex-col items-center bg-neutral-800 px-6 pb-4">
+                <button
+                  onclick="tog()"
+                  class="rounded border border-gray-400 bg-white px-4 font-semibold text-gray-800 shadow hover:bg-gray-100"
+                >
+                  Enter Custom Time
+                </button>
+              </div>
 
               <div>List showing for:</div>
               <!-- <div id="update"></div> -->
 
-              <div class="bg-neutral-800 flex justify-center pb-4 text-black font-mono hidden" id="cus-time">
-                <input type="date" id="date" class="px-1">
-        
-                <input type="time" id="time" class="px-4">
-              </div>
+              <div
+                class="flex hidden justify-center bg-neutral-800 pb-4 font-mono text-black"
+                id="cus-time"
+              >
+                <input type="date" id="date" class="px-1" />
 
+                <input type="time" id="time" class="px-4" />
+              </div>
             </div>
             <thead>
               <tr>
@@ -118,18 +98,18 @@
         </div>
       </div>
     </div>
-    <div class="flex items-end justify-center px-6 py-4 h-auto">
+    <div class="flex h-auto items-end justify-center px-6 py-4">
       <a href="http://github.com/nur-zaman" target="_blank"
         ><span
-          class="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2"
+          class="mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-600"
           ><i class="fab fa-github"></i></span
       ></a>
     </div>
 
-
-    <div id="notif" class="fixed flex items-center justify-center h-8 pr-2 pl-1 bg-blue-600 rounded-full bottom-0 right-0 mr-4 mb-4 shadow-lg text-blue-100 hover:bg-blue-600" >
-
-    </div>
+    <div
+      id="notif"
+      class="fixed bottom-0 right-0 mr-4 mb-4 flex h-8 items-center justify-center rounded-full bg-blue-600 pr-2 pl-1 text-blue-100 shadow-lg hover:bg-blue-600"
+    ></div>
 
     <script src="js/fullList.js"></script>
   </body>
